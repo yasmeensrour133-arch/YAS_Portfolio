@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yasmeen Srour | Data Analyst & AI Engineer Portfolio</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind Custom Configuration -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0b0f19',
+                        cardBg: '#131c2e',
+                        cardBorder: '#1e293b',
+                        accentViolet: '#8b5cf6',
+                        accentGlow: '#a78bfa',
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #0b0f19;
+            color: #f8fafc;
+        }
+        .glow-effect {
+            box-shadow: 0 0 25px -5px rgba(139, 92, 246, 0.25);
+        }
+        .glow-hover:hover {
+            box-shadow: 0 0 30px 0px rgba(139, 92, 246, 0.4);
+            border-color: rgba(167, 139, 250, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-darkBg text-slate-100 min-h-screen selection:bg-violet-500 selection:text-white">
+
+    <!-- Header / Hero Section -->
+    <header class="relative overflow-hidden border-b border-cardBorder py-20 px-6 sm:px-12 text-center bg-gradient-to-b from-[#111827] to-[#0b0f19]">
+        <div class="max-w-4xl mx-auto space-y-6">
+            <span class="inline-block py-1 px-4 rounded-full bg-violet-950/60 border border-violet-800 text-violet-300 text-xs font-semibold tracking-wider uppercase mb-2">
+                Portfolio & Projects Hub
+            </span>
+            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight">
+                Yasmeen Abdelfattah Srour
+            </h1>
+            <p class="text-lg sm:text-xl text-violet-300 font-medium">
+                Computer Science Student at FCIS-ASU | AI & Data Science Trainee at DEPI
+            </p>
+            <p class="text-slate-400 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
+                Transforming raw data into meaningful business insights, building robust software systems, and crafting interactive digital experiences.
+            </p>
+            
+            <div class="flex flex-wrap justify-center gap-4 pt-4">
+                <a href="#projects" class="px-6 py-3 rounded-xl bg-violet-600 hover:bg-violet-500 text-white font-semibold transition-all duration-300 glow-effect flex items-center gap-2">
+                    <i class="fa-solid fa-code"></i> Explore Projects
+                </a>
+                <a href="https://foggy-effect-138.notion.site/Yasmeen-Srour-Portfolio-3cfb1f66c9d980948db3e81906c4fd13" target="_blank" class="px-6 py-3 rounded-xl bg-cardBg border border-cardBorder hover:border-violet-500 text-slate-200 font-semibold transition-all duration-300 flex items-center gap-2">
+                    <i class="fa-solid fa-external-link-alt"></i> Notion Portfolio
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="max-w-6xl mx-auto px-6 py-16 space-y-20">
+
+        <!-- About Me Section -->
+        <section class="bg-cardBg border border-cardBorder rounded-3xl p-8 sm:p-10 glow-hover transition-all duration-300">
+            <h2 class="text-2xl font-bold text-violet-400 mb-4 flex items-center gap-3">
+                <i class="fa-solid fa-user-astronaut"></i> About Me
+            </h2>
+            <p class="text-slate-300 leading-relaxed text-base sm:text-lg">
+                I am a passionate Computer Science student at the Faculty of Computers and Artificial Intelligence, Ain Shams University (Class of 2029). As an active trainee in the AI and Data Science track at DEPI, I specialize in data analysis, Python, machine learning foundations, and modern software development, bridging analytical problem-solving with creative digital solutions.
+            </p>
+        </section>
+
+        <!-- Skills Section -->
+        <section>
+            <h2 class="text-2xl font-bold text-violet-400 mb-8 flex items-center gap-3">
+                <i class="fa-solid fa-laptop-code"></i> Core Expertise & Skills
+            </h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+                <div class="bg-cardBg border border-cardBorder p-4 rounded-2xl text-center glow-hover transition-all">
+                    <i class="fa-brands fa-python text-3xl text-violet-400 mb-2"></i>
+                    <h3 class="font-semibold text-slate-200">Python (Pandas/NumPy)</h3>
+                </div>
+                <div class="bg-cardBg border border-cardBorder p-4 rounded-2xl text-center glow-hover transition-all">
+                    <i class="fa-solid fa-database text-3xl text-violet-400 mb-2"></i>
+                    <h3 class="font-semibold text-slate-200">SQL & Databases</h3>
+                </div>
+                <div class="bg-cardBg border border-cardBorder p-4 rounded-2xl text-center glow-hover transition-all">
+                    <i class="fa-solid fa-chart-pie text-3xl text-violet-400 mb-2"></i>
+                    <h3 class="font-semibold text-slate-200">Power BI & Visualization</h3>
+                </div>
+                <div class="bg-cardBg border border-cardBorder p-4 rounded-2xl text-center glow-hover transition-all">
+                    <i class="fa-solid fa-c text-3xl text-violet-400 mb-2"></i>
+                    <h3 class="font-semibold text-slate-200">C++ & Software Dev</h3>
+                </div>
+                <div class="bg-cardBg border border-cardBorder p-4 rounded-2xl text-center glow-hover transition-all">
+                    <i class="fa-solid fa-microchip text-3xl text-violet-400 mb-2"></i>
+                    <h3 class="font-semibold text-slate-200">Embedded Systems</h3>
+                </div>
+                <div class="bg-cardBg border border-cardBorder p-4 rounded-2xl text-center glow-hover transition-all">
+                    <i class="fa-solid fa-globe text-3xl text-violet-400 mb-2"></i>
+                    <h3 class="font-semibold text-slate-200">Web Landing Pages</h3>
+                </div>
+                <div class="bg-cardBg border border-cardBorder p-4 rounded-2xl text-center glow-hover transition-all">
+                    <i class="fa-solid fa-brain text-3xl text-violet-400 mb-2"></i>
+                    <h3 class="font-semibold text-slate-200">Data Science Foundations</h3>
+                </div>
+                <div class="bg-cardBg border border-cardBorder p-4 rounded-2xl text-center glow-hover transition-all">
+                    <i class="fa-solid fa-comments text-3xl text-violet-400 mb-2"></i>
+                    <h3 class="font-semibold text-slate-200">Client Communication</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2 class="text-2xl font-bold text-violet-400 mb-8 flex items-center gap-3">
+                <i class="fa-solid fa-diagram-project"></i> Featured Projects
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Project 1 -->
+                <div class="bg-cardBg border border-cardBorder rounded-2xl p-6 flex flex-col justify-between glow-hover transition-all">
+                    <div>
+                        <div class="text-violet-400 text-sm font-semibold mb-2">DEPI & Data Analysis</div>
+                        <h3 class="text-xl font-bold text-slate-100 mb-3">Data Cleaning & Visualization Dashboard</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                            Extensive data preprocessing using Python (Pandas/NumPy), building interactive business dashboards using Power BI to turn raw data into strategic insights.
+                        </p>
+                    </div>
+                    <span class="inline-block px-3 py-1 bg-violet-950/50 border border-violet-800/60 rounded-full text-xs text-violet-300 w-max">Python • Power BI • SQL</span>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-cardBg border border-cardBorder rounded-2xl p-6 flex flex-col justify-between glow-hover transition-all">
+                    <div>
+                        <div class="text-violet-400 text-sm font-semibold mb-2">College Software Project</div>
+                        <h3 class="text-xl font-bold text-slate-100 mb-3">Online Clinic Management System</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                            A full software solution for managing clinic operations, patient records, appointment scheduling, and doctor consultations smoothly.
+                        </p>
+                    </div>
+                    <span class="inline-block px-3 py-1 bg-violet-950/50 border border-violet-800/60 rounded-full text-xs text-violet-300 w-max">Software Engineering • Database</span>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-cardBg border border-cardBorder rounded-2xl p-6 flex flex-col justify-between glow-hover transition-all">
+                    <div>
+                        <div class="text-violet-400 text-sm font-semibold mb-2">Game Development</div>
+                        <h3 class="text-xl font-bold text-slate-100 mb-3">Endless Runner Game</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                            Developed an interactive and dynamic endless runner game applying core programming logic, object orientation, and event handling.
+                        </p>
+                    </div>
+                    <span class="inline-block px-3 py-1 bg-violet-950/50 border border-violet-800/60 rounded-full text-xs text-violet-300 w-max">C++ / Game Logic</span>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="bg-cardBg border border-cardBorder rounded-2xl p-6 flex flex-col justify-between glow-hover transition-all">
+                    <div>
+                        <div class="text-violet-400 text-sm font-semibold mb-2">Embedded Systems & Electronics</div>
+                        <h3 class="text-xl font-bold text-slate-100 mb-3">Pomodoro Timer Electronics Project</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                            Designed and built a hardware-software integrated Pomodoro productivity timer using embedded components and microcontrollers.
+                        </p>
+                    </div>
+                    <span class="inline-block px-3 py-1 bg-violet-950/50 border border-violet-800/60 rounded-full text-xs text-violet-300 w-max">Embedded Systems • Hardware</span>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="bg-cardBg border border-cardBorder rounded-2xl p-6 flex flex-col justify-between glow-hover transition-all">
+                    <div>
+                        <div class="text-violet-400 text-sm font-semibold mb-2">Web Design</div>
+                        <h3 class="text-xl font-bold text-slate-100 mb-3">Web Head Camp Landing Page</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                            Crafted a clean, responsive, and modern landing page for a tech camp event focusing on smooth layout and user engagement.
+                        </p>
+                    </div>
+                    <span class="inline-block px-3 py-1 bg-violet-950/50 border border-violet-800/60 rounded-full text-xs text-violet-300 w-max">HTML • CSS • Responsive</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Freelance & Professional Links -->
+        <section class="bg-cardBg border border-cardBorder rounded-3xl p-8 sm:p-10 text-center">
+            <h2 class="text-2xl font-bold text-violet-400 mb-4">Let's Connect & Work Together</h2>
+            <p class="text-slate-400 max-w-xl mx-auto mb-8 text-sm sm:text-base">
+                Find me across global and regional freelance platforms or check my centralized professional portfolio.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="https://www.upwork.com" target="_blank" class="px-5 py-2.5 rounded-xl bg-slate-800 hover:bg-violet-900 border border-cardBorder text-slate-200 text-sm font-medium transition-all flex items-center gap-2">
+                    <i class="fa-solid fa-briefcase text-violet-400"></i> Upwork
+                </a>
+                <a href="https://www.fiverr.com" target="_blank" class="px-5 py-2.5 rounded-xl bg-slate-800 hover:bg-violet-900 border border-cardBorder text-slate-200 text-sm font-medium transition-all flex items-center gap-2">
+                    <i class="fa-solid fa-store text-violet-400"></i> Fiverr
+                </a>
+                <a href="https://mostaql.com" target="_blank" class="px-5 py-2.5 rounded-xl bg-slate-800 hover:bg-violet-900 border border-cardBorder text-slate-200 text-sm font-medium transition-all flex items-center gap-2">
+                    <i class="fa-solid fa-globe text-violet-400"></i> Mostaql
+                </a>
+                <a href="https://khamsat.com" target="_blank" class="px-5 py-2.5 rounded-xl bg-slate-800 hover:bg-violet-900 border border-cardBorder text-slate-200 text-sm font-medium transition-all flex items-center gap-2">
+                    <i class="fa-solid fa-shopping-cart text-violet-400"></i> Khamsat
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-cardBorder py-8 text-center text-slate-500 text-sm">
+        <p>© 2026 Yasmeen Abdelfattah Srour. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
