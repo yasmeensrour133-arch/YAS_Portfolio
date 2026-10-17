@@ -50,6 +50,22 @@
             box-shadow: 0 0 30px 0px rgba(139, 92, 246, 0.4);
             border-color: rgba(167, 139, 250, 0.5);
         }
+        .project-img-container {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
+        }
+        .project-img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+        .glow-hover:hover .project-img-container img {
+            transform: scale(1.05);
+        }
     </style>
 </head>
 <body class="bg-darkBg text-slate-100 min-h-screen selection:bg-violet-500 selection:text-white">
@@ -73,6 +89,9 @@
             <div class="flex flex-wrap justify-center gap-4 pt-4">
                 <a href="#projects" class="px-6 py-3 rounded-xl bg-violet-600 hover:bg-violet-500 text-white font-semibold transition-all duration-300 glow-effect flex items-center gap-2">
                     <i class="fa-solid fa-code"></i> Explore Projects
+                </a>
+                <a href="#certificates" class="px-6 py-3 rounded-xl bg-cardBg border border-cardBorder hover:border-violet-500 text-slate-200 font-semibold transition-all duration-300 flex items-center gap-2">
+                    <i class="fa-solid fa-certificate text-violet-400"></i> Certificates
                 </a>
                 <a href="https://foggy-effect-138.notion.site/Yasmeen-Srour-Portfolio-3cfb1f66c9d980948db3e81906c4fd13" target="_blank" class="px-6 py-3 rounded-xl bg-cardBg border border-cardBorder hover:border-violet-500 text-slate-200 font-semibold transition-all duration-300 flex items-center gap-2">
                     <i class="fa-solid fa-external-link-alt"></i> Notion Portfolio
@@ -142,65 +161,145 @@
             </h2>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Project 1 -->
-                <div class="bg-cardBg border border-cardBorder rounded-2xl p-6 flex flex-col justify-between glow-hover transition-all">
-                    <div>
-                        <div class="text-violet-400 text-sm font-semibold mb-2">DEPI & Data Analysis</div>
-                        <h3 class="text-xl font-bold text-slate-100 mb-3">Data Cleaning & Visualization Dashboard</h3>
-                        <p class="text-slate-400 text-sm leading-relaxed mb-4">
-                            Extensive data preprocessing using Python (Pandas/NumPy), building interactive business dashboards using Power BI to turn raw data into strategic insights.
-                        </p>
+
+                <!-- Project 1: C++ Online Clinic -->
+                <div class="bg-cardBg border border-cardBorder rounded-2xl overflow-hidden flex flex-col justify-between glow-hover transition-all">
+                    <div class="project-img-container">
+                        <img src="clinic.jpg" alt="Online Clinic System" loading="lazy">
                     </div>
-                    <span class="inline-block px-3 py-1 bg-violet-950/50 border border-violet-800/60 rounded-full text-xs text-violet-300 w-max">Python • Power BI • SQL</span>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="text-violet-400 text-sm font-semibold mb-2">College Software Project</div>
+                            <h3 class="text-xl font-bold text-slate-100 mb-3">Online Clinic Management System</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                                A C++ console application managing patient records, appointments, admin controls, and doctor schedules with structured file storage.
+                            </p>
+                        </div>
+                        <span class="inline-block px-3 py-1 bg-violet-950/50 border border-violet-800/60 rounded-full text-xs text-violet-300 w-max">C++ • File Handling • OOP</span>
+                    </div>
                 </div>
 
-                <!-- Project 2 -->
-                <div class="bg-cardBg border border-cardBorder rounded-2xl p-6 flex flex-col justify-between glow-hover transition-all">
-                    <div>
-                        <div class="text-violet-400 text-sm font-semibold mb-2">College Software Project</div>
-                        <h3 class="text-xl font-bold text-slate-100 mb-3">Online Clinic Management System</h3>
-                        <p class="text-slate-400 text-sm leading-relaxed mb-4">
-                            A full software solution for managing clinic operations, patient records, appointment scheduling, and doctor consultations smoothly.
-                        </p>
+                <!-- Project 2: Arduino Pomodoro Timer -->
+                <div class="bg-cardBg border border-cardBorder rounded-2xl overflow-hidden flex flex-col justify-between glow-hover transition-all">
+                    <div class="project-img-container">
+                        <img src="arduino.jpg" alt="Pomodoro Timer Hardware" loading="lazy">
                     </div>
-                    <span class="inline-block px-3 py-1 bg-violet-950/50 border border-violet-800/60 rounded-full text-xs text-violet-300 w-max">Software Engineering • Database</span>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="text-violet-400 text-sm font-semibold mb-2">Embedded Systems</div>
+                            <h3 class="text-xl font-bold text-slate-100 mb-3">Smart Pomodoro Timer</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                                Hardware-software integrated Pomodoro productivity system developed using Arduino Uno, LCD screen, buzzers, and LEDs.
+                            </p>
+                        </div>
+                        <span class="inline-block px-3 py-1 bg-violet-950/50 border border-violet-800/60 rounded-full text-xs text-violet-300 w-max">Arduino • Embedded C • Electronics</span>
+                    </div>
                 </div>
 
-                <!-- Project 3 -->
-                <div class="bg-cardBg border border-cardBorder rounded-2xl p-6 flex flex-col justify-between glow-hover transition-all">
-                    <div>
-                        <div class="text-violet-400 text-sm font-semibold mb-2">Game Development</div>
-                        <h3 class="text-xl font-bold text-slate-100 mb-3">Endless Runner Game</h3>
-                        <p class="text-slate-400 text-sm leading-relaxed mb-4">
-                            Developed an interactive and dynamic endless runner game applying core programming logic, object orientation, and event handling.
-                        </p>
+                <!-- Project 3: C++ Game UI -->
+                <div class="bg-cardBg border border-cardBorder rounded-2xl overflow-hidden flex flex-col justify-between glow-hover transition-all">
+                    <div class="project-img-container">
+                        <img src="game.jpg" alt="C++ Game Interface" loading="lazy">
                     </div>
-                    <span class="inline-block px-3 py-1 bg-violet-950/50 border border-violet-800/60 rounded-full text-xs text-violet-300 w-max">C++ / Game Logic</span>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="text-violet-400 text-sm font-semibold mb-2">Game Development</div>
+                            <h3 class="text-xl font-bold text-slate-100 mb-3">Interactive Game Menu & Logic</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                                An interactive runner game interface developed with customized menu logic, event handling, and game state controls.
+                            </p>
+                        </div>
+                        <span class="inline-block px-3 py-1 bg-violet-950/50 border border-violet-800/60 rounded-full text-xs text-violet-300 w-max">C++ • GUI • Game Logic</span>
+                    </div>
                 </div>
 
-                <!-- Project 4 -->
-                <div class="bg-cardBg border border-cardBorder rounded-2xl p-6 flex flex-col justify-between glow-hover transition-all">
-                    <div>
-                        <div class="text-violet-400 text-sm font-semibold mb-2">Embedded Systems & Electronics</div>
-                        <h3 class="text-xl font-bold text-slate-100 mb-3">Pomodoro Timer Electronics Project</h3>
-                        <p class="text-slate-400 text-sm leading-relaxed mb-4">
-                            Designed and built a hardware-software integrated Pomodoro productivity timer using embedded components and microcontrollers.
-                        </p>
+                <!-- Project 4: Arduino Circuit Simulation -->
+                <div class="bg-cardBg border border-cardBorder rounded-2xl overflow-hidden flex flex-col justify-between glow-hover transition-all">
+                    <div class="project-img-container">
+                        <img src="tinkercad.jpg" alt="Tinkercad Circuit Simulation" loading="lazy">
                     </div>
-                    <span class="inline-block px-3 py-1 bg-violet-950/50 border border-violet-800/60 rounded-full text-xs text-violet-300 w-max">Embedded Systems • Hardware</span>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="text-violet-400 text-sm font-semibold mb-2">Circuit Simulation</div>
+                            <h3 class="text-xl font-bold text-slate-100 mb-3">Tinkercad Embedded Simulation</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                                Virtual circuit architecture and pinout simulation built on Tinkercad prior to hardware deployment and testing.
+                            </p>
+                        </div>
+                        <span class="inline-block px-3 py-1 bg-violet-950/50 border border-violet-800/60 rounded-full text-xs text-violet-300 w-max">Tinkercad • Circuit Design</span>
+                    </div>
                 </div>
 
-                <!-- Project 5 -->
-                <div class="bg-cardBg border border-cardBorder rounded-2xl p-6 flex flex-col justify-between glow-hover transition-all">
+                <!-- Project 5: DEPI Data Analysis -->
+                <div class="bg-cardBg border border-cardBorder rounded-2xl overflow-hidden flex flex-col justify-between glow-hover transition-all">
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="text-violet-400 text-sm font-semibold mb-2">DEPI & Data Analytics</div>
+                            <h3 class="text-xl font-bold text-slate-100 mb-3">Data Cleaning & Visualization Dashboard</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                                Extensive data preprocessing using Python (Pandas/NumPy) and building interactive dashboards using Power BI to derive actionable business insights.
+                            </p>
+                        </div>
+                        <span class="inline-block px-3 py-1 bg-violet-950/50 border border-violet-800/60 rounded-full text-xs text-violet-300 w-max">Python • Power BI • SQL</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Certificates & Honors Section -->
+        <section id="certificates">
+            <h2 class="text-2xl font-bold text-violet-400 mb-8 flex items-center gap-3">
+                <i class="fa-solid fa-award"></i> Certificates & Credentials
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                <!-- Certificate 1: Oracle AI Badge -->
+                <div class="bg-cardBg border border-cardBorder rounded-2xl overflow-hidden p-6 text-center glow-hover transition-all flex flex-col items-center justify-between">
+                    <div class="w-32 h-32 mb-4 flex items-center justify-center">
+                        <img src="oracle.png" alt="Oracle AI Badge" class="max-h-full max-w-full object-contain" loading="lazy">
+                    </div>
                     <div>
-                        <div class="text-violet-400 text-sm font-semibold mb-2">Web Design</div>
-                        <h3 class="text-xl font-bold text-slate-100 mb-3">Web Head Camp Landing Page</h3>
-                        <p class="text-slate-400 text-sm leading-relaxed mb-4">
-                            Crafted a clean, responsive, and modern landing page for a tech camp event focusing on smooth layout and user engagement.
+                        <span class="text-xs text-violet-400 font-semibold uppercase tracking-wider">Professional Badge</span>
+                        <h3 class="text-lg font-bold text-slate-100 mt-1 mb-2">Oracle AI for You</h3>
+                        <p class="text-slate-400 text-xs leading-relaxed mb-4">
+                            Official badge certifying proficiency in Artificial Intelligence fundamentals and core concepts.
                         </p>
                     </div>
-                    <span class="inline-block px-3 py-1 bg-violet-950/50 border border-violet-800/60 rounded-full text-xs text-violet-300 w-max">HTML • CSS • Responsive</span>
+                    <span class="px-3 py-1 bg-violet-950/50 border border-violet-800/60 rounded-full text-xs text-violet-300">Oracle Academy</span>
                 </div>
+
+                <!-- Certificate 2: iClub HR -->
+                <div class="bg-cardBg border border-cardBorder rounded-2xl overflow-hidden p-6 text-center glow-hover transition-all flex flex-col items-center justify-between">
+                    <div class="project-img-container h-40 mb-4 rounded-xl">
+                        <img src="iclub-hr.jpg" alt="iClub HR Certificate" loading="lazy">
+                    </div>
+                    <div>
+                        <span class="text-xs text-violet-400 font-semibold uppercase tracking-wider">Leadership & Soft Skills</span>
+                        <h3 class="text-lg font-bold text-slate-100 mt-1 mb-2">iClub HR Committee Member</h3>
+                        <p class="text-slate-400 text-xs leading-relaxed mb-4">
+                            Certificate of Appreciation for dedicated efforts and active participation in the HR Committee during Season 26.
+                        </p>
+                    </div>
+                    <span class="px-3 py-1 bg-violet-950/50 border border-violet-800/60 rounded-full text-xs text-violet-300">iClub FCIS-ASU</span>
+                </div>
+
+                <!-- Certificate 3: Best Team -->
+                <div class="bg-cardBg border border-cardBorder rounded-2xl overflow-hidden p-6 text-center glow-hover transition-all flex flex-col items-center justify-between">
+                    <div class="project-img-container h-40 mb-4 rounded-xl">
+                        <img src="iclub-team.jpg" alt="Best Team Award" loading="lazy">
+                    </div>
+                    <div>
+                        <span class="text-xs text-violet-400 font-semibold uppercase tracking-wider">Honorary Award</span>
+                        <h3 class="text-lg font-bold text-slate-100 mt-1 mb-2">Best Team in Presentation Skills</h3>
+                        <p class="text-slate-400 text-xs leading-relaxed mb-4">
+                            Awarded for exceptional teamwork, communication, and presentation delivery across project presentations.
+                        </p>
+                    </div>
+                    <span class="px-3 py-1 bg-violet-950/50 border border-violet-800/60 rounded-full text-xs text-violet-300">HR Team Award</span>
+                </div>
+
             </div>
         </section>
 
